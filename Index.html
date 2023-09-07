@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bloons Wordle</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="images/Logo.jpg" id="navbar__logo">Bloondle</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">Play</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">How To Play</a>
+                    </li>
+                    <li class="navbar__btn"><a href="/"
+                    class="button">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main">
+            <div class="main__container">
+                <div class="main__content">
+                    <div class="titleBlock">
+                        <div class="Title" id='titleID'>Bloondle</div>
+                        <div class="description">Guess the Monkey of the Day!</div>
+                    </div>
+
+
+                    <div class="guessBox">
+                        <form autocomplete="off" action="/action_page.php">
+                            <div class="autocomplete" style="width:300px;">
+                              <input id="myInput" type="text" name="myCountry" placeholder="Guess a Monkey ...">
+                                <div class="guessFeedback__Container">
+                                    
+                                </div>
+
+                            </div>
+                        </form>
+                        <button type="button" id="mySubmit" value="submit" name="e-h1" onclick="CreateNewDom();">Check Guess</button>
+                        
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="app.js"></script>
+    </body>
+</html>
